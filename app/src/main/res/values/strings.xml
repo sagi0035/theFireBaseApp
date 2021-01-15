@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">theFireBaseApp</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="facebook_app_id">2802682103382910</string>
+    <string name="fb_login_protocol_scheme">fb2802682103382910</string>
+</resources>

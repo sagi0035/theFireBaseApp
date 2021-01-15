@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relolayo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".setUpActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/theEmpty"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/emp" />
+
+        <EditText
+            android:id="@+id/theUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theEmpty"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Username"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputs"
+            android:padding="14dp"/>
+
+        <EditText
+            android:id="@+id/theFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theUserName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Full Name"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputs"
+            android:padding="14dp"/>
+
+        <EditText
+            android:id="@+id/theAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theFullName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Age"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputs"
+            android:padding="14dp"/>
+
+        <RadioGroup
+            android:id="@+id/genders"
+            android:layout_below="@+id/theAge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:onClick="check"
+                android:paddingBottom="5dp"
+                android:buttonTint="#0000FF"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:onClick="check"
+                android:paddingBottom="5dp"
+                android:buttonTint="#0000FF"/>
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Configure Other"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:onClick="checkTheOther"
+                android:paddingBottom="5dp"
+                android:buttonTint="#0000FF"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genders"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button"
+            android:text="Save"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+</ScrollView>
