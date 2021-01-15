@@ -1,5 +1,5 @@
 # theFireBaseApp
-An app that allows users to log in, register and post to the app <br />
+An app that allows users to log in, register and post to the app. <br />
 This is a completely unique app created without any external help/guidance <br />
 This app is still incomplete. <br />
 Phone sign-in number +35612345678 code 123456 <br />
